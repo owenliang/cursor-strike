@@ -44,7 +44,7 @@ export function LoginPage({ onStart }: { onStart: (nickname: string) => void }) 
 
       {/* Language selector */}
       <div style={{
-        position: 'absolute', right: 20, top: 16, zIndex: 1,
+        position: 'absolute', right: 20, top: 16,
         display: 'flex',
         border: '1px solid var(--fps-accent)',
         borderRadius: 'var(--fps-rounded-sm)',
