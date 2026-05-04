@@ -18,10 +18,10 @@ function Btn({ icon, label, onClick }: { icon: React.ReactNode; label: string; o
       style={{
         display: 'flex', alignItems: 'center', gap: 8,
         padding: '10px 14px',
-        background: 'rgba(26,26,26,0.5)',
+        background: 'rgba(240,240,240,0.5)',
         border: '1px solid var(--fps-border)',
         borderRadius: 'var(--fps-rounded-sm)',
-        color: 'var(--fps-text-light)',
+        color: 'var(--foreground-secondary)',
         cursor: 'pointer',
       }}
     >

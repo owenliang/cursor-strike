@@ -27,12 +27,11 @@ export function LoginPage({ onStart }: { onStart: (nickname: string) => void }) 
     }}>
       {/* Grid background */}
       <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
-        {/* Percentage-based grid lines */}
         {[25, 50, 75].map(pct => (
-          <div key={`h${pct}`} style={{ position:'absolute', left:0, top:`${pct}%`, width:'100%', height:1, background:'rgba(26,26,26,0.15)' }} />
+          <div key={`h${pct}`} style={{ position:'absolute', left:0, top:`${pct}%`, width:'100%', height:1, background:'#d0d0d0', opacity:0.15 }} />
         ))}
         {[25, 50, 75].map(pct => (
-          <div key={`v${pct}`} style={{ position:'absolute', left:`${pct}%`, top:0, width:1, height:'100%', background:'rgba(26,26,26,0.15)' }} />
+          <div key={`v${pct}`} style={{ position:'absolute', left:`${pct}%`, top:0, width:1, height:'100%', background:'#d0d0d0', opacity:0.15 }} />
         ))}
         <div style={{
           position: 'absolute', left: '30%', top: '22%',
@@ -56,7 +55,7 @@ export function LoginPage({ onStart }: { onStart: (nickname: string) => void }) 
           style={{
             padding: '8px 16px',
             background: lang === 'zh' ? 'var(--fps-accent)' : 'var(--fps-bg-card)',
-            color: lang === 'zh' ? 'var(--fps-bg-dark)' : 'var(--fps-accent)',
+            color: lang === 'zh' ? 'var(--foreground-inverse)' : 'var(--fps-accent)',
             fontFamily: 'var(--fps-font-captions)',
             fontSize: 13,
             letterSpacing: 2,
@@ -72,7 +71,7 @@ export function LoginPage({ onStart }: { onStart: (nickname: string) => void }) 
           style={{
             padding: '8px 16px',
             background: lang === 'en' ? 'var(--fps-accent)' : 'var(--fps-bg-card)',
-            color: lang === 'en' ? 'var(--fps-bg-dark)' : 'var(--fps-accent)',
+            color: lang === 'en' ? 'var(--foreground-inverse)' : 'var(--fps-accent)',
             fontFamily: 'var(--fps-font-captions)',
             fontSize: 13,
             letterSpacing: 2,
@@ -96,17 +95,17 @@ export function LoginPage({ onStart }: { onStart: (nickname: string) => void }) 
         }}>
           <span style={{
             fontFamily: 'var(--fps-font-heading)', fontSize: 72, fontWeight: 'bold',
-            letterSpacing: -2, color: 'var(--fps-accent)',
-            textShadow: '0 0 12px rgba(74,222,128,0.25)',
+            letterSpacing: -2, color: 'var(--accent-primary)',
+            textShadow: '0 0 12px var(--fps-accent-glow)',
           }}>
             CURSOR STRIKE
           </span>
 
-          <div style={{ width: 200, height: 2, background: 'var(--fps-accent)', opacity: 0.6, borderRadius: 1 }} />
+          <div style={{ width: 200, height: 2, background: 'var(--accent-primary)', opacity: 0.6, borderRadius: 1 }} />
 
           <span style={{
             fontFamily: 'var(--fps-font-captions)', fontSize: 14,
-            letterSpacing: 4, color: 'var(--fps-text-light)',
+            letterSpacing: 4, color: 'var(--foreground-secondary)',
           }}>
             {t('login_subtitle')}
           </span>
@@ -114,7 +113,7 @@ export function LoginPage({ onStart }: { onStart: (nickname: string) => void }) 
           <div style={{
             width: '100%', display: 'flex', alignItems: 'center', gap: 12,
             padding: '16px 20px',
-            background: 'var(--fps-bg-card)',
+            background: 'var(--surface-secondary)',
             border: shaking ? '1px solid var(--fps-error)' : '1px solid var(--fps-border)',
             borderRadius: 'var(--fps-rounded-md)',
             animation: shaking ? 'shake 400ms' : undefined,
@@ -140,15 +139,15 @@ export function LoginPage({ onStart }: { onStart: (nickname: string) => void }) 
               width: '100%', display: 'flex', alignItems: 'center',
               justifyContent: 'center', gap: 10,
               padding: '16px 32px',
-              background: 'var(--fps-accent)',
+              background: 'var(--accent-primary)',
               borderRadius: 'var(--fps-rounded-md)',
-              boxShadow: '0 0 8px rgba(74,222,128,0.38)',
+              boxShadow: '0 2px 8px var(--fps-accent-glow)',
               cursor: 'pointer',
-              color: 'var(--fps-bg-dark)',
+              color: 'var(--foreground-inverse)',
             }}
           >
-            <Crosshair size={20} />
-            <span style={{ fontFamily: 'var(--fps-font-heading)', fontSize: 22, letterSpacing: 1 }}>
+            <Crosshair size={20} color="var(--surface-inverse)" />
+            <span style={{ fontFamily: 'var(--fps-font-heading)', fontSize: 22, color: 'var(--surface-inverse)' }}>
               {t('login_start')}
             </span>
           </button>

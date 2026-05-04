@@ -191,25 +191,52 @@ CSS 变量文件 `tokens.css`：
 
 ```css
 :root {
-  --fps-accent: #4ade80;
-  --fps-green-dark: #22c55e;
-  --fps-bg-dark: #1a1a2e;
-  --fps-bg-card: #1a1a2e;
-  --fps-border: #2a2a4a;
-  --fps-text-muted: #999999;
-  --fps-text-light: #9ca3af;
-  --fps-text-dim: #666666;
-  --fps-text-primary: #E5E5E5;
+  /* Accent colors */
+  --fps-accent: #22c55e;
+  --fps-green-dark: #16a34a;
+  --fps-accent-glow: rgba(34, 197, 94, 0.25);
   --fps-error: #ef4444;
 
+  /* Background colors (light theme) */
+  --fps-bg-dark: #fafafa;
+  --fps-bg-card: #ffffff;
+  --fps-bg-main: #f5f5f5;
+
+  /* Surface colors */
+  --surface-primary: #fafafa;
+  --surface-secondary: #f0f0f0;
+  --surface-inverse: #ffffff;
+
+  /* Border */
+  --fps-border: #e5e5e5;
+
+  /* Foreground / Text colors */
+  --fps-text-primary: #1a1a1a;
+  --fps-text-light: #888888;
+  --fps-text-muted: #888888;
+  --fps-text-dim: #aaaaaa;
+
+  /* Foreground semantic */
+  --foreground-primary: #1a1a1a;
+  --foreground-secondary: #666666;
+  --foreground-inverse: #ffffff;
+  --foreground-muted: #aaaaaa;
+
+  /* Accent alias */
+  --accent-primary: #22c55e;
+
+  /* Shadows */
+  --fps-glow-accent: 0 0 8px rgba(34, 197, 94, 0.25);
+  --fps-shadow-sm: rgba(0, 0, 0, 0.04);
+
+  /* Fonts */
   --fps-font-heading: 'Anton', sans-serif;
   --fps-font-body: 'Inter', sans-serif;
   --fps-font-captions: 'Inter', sans-serif;
 
+  /* Border radius */
   --fps-rounded-sm: 4px;
   --fps-rounded-md: 6px;
-
-  --fps-glow-accent: 0 0 8px rgba(74, 222, 128, 0.25);
 }
 ```
 

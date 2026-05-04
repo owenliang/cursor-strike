@@ -17,10 +17,10 @@ export function Tip({ text }: { text: string }) {
           left: '50%',
           transform: 'translateX(-50%) translateY(-4px)',
           padding: '8px 12px',
-          background: '#2a2a4a',
-          border: '1px solid var(--fps-border)',
+          background: '#1a1a1a',
+          border: '1px solid #333333',
           borderRadius: 'var(--fps-rounded-sm)',
-          color: 'var(--fps-text-light)',
+          color: '#ffffff',
           fontFamily: 'var(--fps-font-body)',
           fontSize: 12,
           lineHeight: 1.4,
@@ -29,7 +29,7 @@ export function Tip({ text }: { text: string }) {
           maxWidth: 220,
           textAlign: 'center',
           zIndex: 999,
-          boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+          boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
           marginBottom: 4,
         }}>
           {text}

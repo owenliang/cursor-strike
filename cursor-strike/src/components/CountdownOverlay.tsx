@@ -21,7 +21,7 @@ export function CountdownOverlay({ onDone }: { onDone: () => void }) {
     <div style={{
       position: 'absolute', inset: 0,
       display: 'flex', alignItems: 'center', justifyContent: 'center',
-      background: 'rgba(10,10,10,0.7)',
+      background: 'rgba(0,0,0,0.5)',
       zIndex: 100,
     }}>
       <span key={count} style={{
@@ -29,7 +29,7 @@ export function CountdownOverlay({ onDone }: { onDone: () => void }) {
         fontSize: 96,
         color: 'var(--fps-accent)',
         letterSpacing: -2,
-        textShadow: '0 0 16px rgba(74,222,128,0.4)',
+        textShadow: '0 0 16px rgba(34,197,94,0.4)',
         animation: 'countIn 300ms ease-out',
       }}>
         {display}

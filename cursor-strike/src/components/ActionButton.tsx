@@ -11,11 +11,11 @@ export function ActionButton({ variant, icon, label, onClick }: {
       style={{
         display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
         padding: '14px 28px',
-        background: isPrimary ? 'var(--fps-accent)' : 'var(--fps-bg-card)',
+        background: isPrimary ? 'var(--accent-primary)' : 'var(--surface-secondary)',
         border: isPrimary ? 'none' : '1px solid var(--fps-border)',
         borderRadius: 'var(--fps-rounded-md)',
-        color: isPrimary ? 'var(--fps-bg-dark)' : 'var(--fps-text-light)',
-        boxShadow: isPrimary ? 'var(--fps-glow-accent)' : 'none',
+        color: isPrimary ? 'var(--foreground-inverse)' : 'var(--foreground-secondary)',
+        boxShadow: isPrimary ? '0 2px 8px var(--fps-accent-glow)' : 'none',
         cursor: 'pointer',
         fontFamily: 'var(--fps-font-heading)',
         fontSize: 18,
@@ -31,10 +31,10 @@ export function ActionButton({ variant, icon, label, onClick }: {
 
 export function PlayAgainBtn({ onClick }: { onClick: () => void }) {
   const { t } = useLang();
-  return <ActionButton variant="primary" icon={<RotateCcw size={18} />} label={t('result_play_again')} onClick={onClick} />;
+  return <ActionButton variant="primary" icon={<RotateCcw size={18} color="var(--surface-inverse)" />} label={t('result_play_again')} onClick={onClick} />;
 }
 
 export function HomeBtn({ onClick }: { onClick: () => void }) {
   const { t } = useLang();
-  return <ActionButton variant="secondary" icon={<Home size={18} />} label={t('result_home')} onClick={onClick} />;
+  return <ActionButton variant="secondary" icon={<Home size={18} color="var(--foreground-secondary)" />} label={t('result_home')} onClick={onClick} />;
 }

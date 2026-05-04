@@ -8,7 +8,7 @@ export function StatCard({ label, desc, value, color, delay, glow }: {
     <div style={{
       display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8,
       padding: '20px 24px',
-      background: 'rgba(26,26,26,0.8)',
+      background: 'var(--fps-bg-card)',
       border: '1px solid var(--fps-border)',
       borderRadius: 'var(--fps-rounded-md)',
       backdropFilter: 'blur(8px)',

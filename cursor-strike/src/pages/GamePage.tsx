@@ -119,42 +119,18 @@ export function GamePage({ nickname, onEnd, onExit }: {
         cursor: 'none',
       }}
     >
-      {/* Moving background — grid pattern that shifts with mouse */}
+      {/* Parallax background — subtle offset with mouse */}
       <div style={{
         position: 'absolute',
-        width: '140%',
-        height: '140%',
-        left: '-20%',
-        top: '-20%',
+        width: '120%',
+        height: '120%',
+        left: '-10%',
+        top: '-10%',
         transform: `translate(${bgOffset.x}px, ${bgOffset.y}px)`,
         transition: 'transform 0.1s ease-out',
         pointerEvents: 'none',
-      }}>
-        {/* Grid lines */}
-        {Array.from({ length: 15 }, (_, i) => (
-          <div key={`h${i}`} style={{
-            position: 'absolute',
-            left: 0, top: `${(i + 1) * 6.67}%`,
-            width: '100%', height: 1,
-            background: 'rgba(74, 222, 128, 0.12)',
-          }} />
-        ))}
-        {Array.from({ length: 20 }, (_, i) => (
-          <div key={`v${i}`} style={{
-            position: 'absolute',
-            left: `${(i + 1) * 5}%`, top: 0,
-            width: 1, height: '100%',
-            background: 'rgba(74, 222, 128, 0.12)',
-          }} />
-        ))}
-        {/* Center glow */}
-        <div style={{
-          position: 'absolute',
-          left: '45%', top: '40%',
-          width: '10%', height: '20%',
-          background: 'radial-gradient(ellipse, rgba(74,222,128,0.08), rgba(102,51,153,0.03), transparent)',
-        }} />
-      </div>
+        background: 'var(--fps-bg-dark)',
+      }} />
 
       <Crosshair x={mousePos.x} y={mousePos.y} flash={crosshairFlash} />
 

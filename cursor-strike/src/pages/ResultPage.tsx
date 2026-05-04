@@ -33,15 +33,15 @@ export function ResultPage({ result, onPlayAgain, onHome }: {
       }}>
         <span style={{
           fontFamily: 'var(--fps-font-heading)', fontSize: 48, fontWeight: 'bold',
-          letterSpacing: 1, color: 'var(--fps-accent)',
-          textShadow: '0 0 10px rgba(74,222,128,0.25)',
+          letterSpacing: 1, color: 'var(--accent-primary)',
+          textShadow: '0 0 10px var(--fps-accent-glow)',
         }}>
           {t('result_title')}
         </span>
 
         <span style={{
           fontFamily: 'var(--fps-font-captions)', fontSize: 13,
-          letterSpacing: 3, color: 'var(--fps-text-light)',
+          letterSpacing: 2, color: 'var(--foreground-secondary)',
         }}>
           {t('result_subtitle')}
         </span>

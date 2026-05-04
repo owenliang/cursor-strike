@@ -6,7 +6,7 @@ export function ConfirmModal({ onConfirm, onCancel }: { onConfirm: () => void; o
     <div style={{
       position: 'absolute', inset: 0,
       display: 'flex', alignItems: 'center', justifyContent: 'center',
-      background: 'rgba(10,10,10,0.8)',
+      background: 'rgba(0,0,0,0.5)',
       zIndex: 200,
     }}>
       <div style={{

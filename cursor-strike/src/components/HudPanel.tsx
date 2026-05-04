@@ -12,7 +12,7 @@ export function HudPanel({ hits, totalTargets, misses, timeLeft }: {
     <div style={{
       position: 'absolute', right: 20, top: 16,
       width: 180, padding: '16px 20px',
-      background: 'rgba(26,26,26,0.9)',
+      background: 'rgba(245,245,245,0.88)',
       border: '1px solid var(--fps-border)',
       borderRadius: 'var(--fps-rounded-md)',
       display: 'flex', flexDirection: 'column', gap: 16,

@@ -67,7 +67,7 @@
               "y": 180,
               "name": "gh1",
               "opacity": 0.15,
-              "fill": "#1a1a1a",
+              "fill": "#d0d0d0",
               "width": 1280,
               "height": 1
             },
@@ -78,7 +78,7 @@
               "y": 360,
               "name": "gh2",
               "opacity": 0.15,
-              "fill": "#1a1a1a",
+              "fill": "#d0d0d0",
               "width": 1280,
               "height": 1
             },
@@ -89,7 +89,7 @@
               "y": 540,
               "name": "gh3",
               "opacity": 0.15,
-              "fill": "#1a1a1a",
+              "fill": "#d0d0d0",
               "width": 1280,
               "height": 1
             },
@@ -100,7 +100,7 @@
               "y": 0,
               "name": "gv1",
               "opacity": 0.15,
-              "fill": "#1a1a1a",
+              "fill": "#d0d0d0",
               "width": 1,
               "height": 720
             },
@@ -111,7 +111,7 @@
               "y": 0,
               "name": "gv2",
               "opacity": 0.15,
-              "fill": "#1a1a1a",
+              "fill": "#d0d0d0",
               "width": 1,
               "height": 720
             },
@@ -122,7 +122,7 @@
               "y": 0,
               "name": "gv3",
               "opacity": 0.15,
-              "fill": "#1a1a1a",
+              "fill": "#d0d0d0",
               "width": 1,
               "height": 720
             }
@@ -157,7 +157,7 @@
                   "effect": {
                     "type": "shadow",
                     "shadowType": "outer",
-                    "color": "#4ade8040",
+                    "color": "#22c55e30",
                     "blur": 12
                   },
                   "content": "CURSOR STRIKE",
@@ -222,7 +222,7 @@
                       "type": "text",
                       "id": "rXdux",
                       "name": "inputText",
-                      "fill": "#ffffff40",
+                      "fill": "#888888",
                       "content": "请输入游戏昵称...",
                       "fontFamily": "Inter",
                       "fontSize": 16,
@@ -240,7 +240,7 @@
                   "effect": {
                     "type": "shadow",
                     "shadowType": "outer",
-                    "color": "#4ade8060",
+                    "color": "#22c55e40",
                     "offset": {
                       "x": 0,
                       "y": 2
@@ -293,6 +293,19 @@
               ]
             }
           ]
+        },
+        {
+          "type": "text",
+          "id": "iY91x",
+          "layoutPosition": "absolute",
+          "x": 1100,
+          "y": 700,
+          "name": "t1",
+          "fill": "$foreground-muted",
+          "content": "powered by pencil",
+          "fontFamily": "$--fps-font-captions",
+          "fontSize": 12,
+          "fontWeight": "normal"
         }
       ]
     },
@@ -321,7 +334,7 @@
               "type": "frame",
               "id": "N4ukP",
               "name": "Pause Btn",
-              "fill": "#1a1a2e80",
+              "fill": "#f0f0f080",
               "cornerRadius": "$--fps-rounded-sm",
               "stroke": {
                 "align": "inside",
@@ -361,7 +374,7 @@
               "type": "frame",
               "id": "I1A6jk",
               "name": "Exit Btn",
-              "fill": "#1a1a2e80",
+              "fill": "#f0f0f080",
               "cornerRadius": "$--fps-rounded-sm",
               "stroke": {
                 "align": "inside",
@@ -406,7 +419,7 @@
           "y": 16,
           "name": "HUD Right",
           "width": 180,
-          "fill": "#1a1a2e90",
+          "fill": "#f5f5f5e0",
           "cornerRadius": "$--fps-rounded-md",
           "stroke": {
             "align": "inside",
@@ -658,11 +671,11 @@
             },
             "colors": [
               {
-                "color": "#4ade80",
+                "color": "#22c55e",
                 "position": 0
               },
               {
-                "color": "#22c55e",
+                "color": "#16a34a",
                 "position": 1
               }
             ]
@@ -673,13 +686,17 @@
             {
               "type": "shadow",
               "shadowType": "outer",
-              "color": "#4ade8050",
+              "color": "#22c55e30",
+              "offset": {
+                "x": 0,
+                "y": 2
+              },
               "blur": 10
             },
             {
               "type": "shadow",
               "shadowType": "outer",
-              "color": "#00000030",
+              "color": "#00000015",
               "offset": {
                 "x": 0,
                 "y": 2
@@ -705,11 +722,11 @@
             },
             "colors": [
               {
-                "color": "#4ade80",
+                "color": "#22c55e",
                 "position": 0
               },
               {
-                "color": "#22c55e",
+                "color": "#16a34a",
                 "position": 1
               }
             ]
@@ -720,13 +737,17 @@
             {
               "type": "shadow",
               "shadowType": "outer",
-              "color": "#4ade8050",
+              "color": "#22c55e30",
+              "offset": {
+                "x": 0,
+                "y": 2
+              },
               "blur": 10
             },
             {
               "type": "shadow",
               "shadowType": "outer",
-              "color": "#00000030",
+              "color": "#00000015",
               "offset": {
                 "x": 0,
                 "y": 2
@@ -752,11 +773,11 @@
             },
             "colors": [
               {
-                "color": "#4ade80",
+                "color": "#22c55e",
                 "position": 0
               },
               {
-                "color": "#22c55e",
+                "color": "#16a34a",
                 "position": 1
               }
             ]
@@ -767,13 +788,17 @@
             {
               "type": "shadow",
               "shadowType": "outer",
-              "color": "#4ade8050",
+              "color": "#22c55e30",
+              "offset": {
+                "x": 0,
+                "y": 2
+              },
               "blur": 10
             },
             {
               "type": "shadow",
               "shadowType": "outer",
-              "color": "#00000030",
+              "color": "#00000015",
               "offset": {
                 "x": 0,
                 "y": 2
@@ -799,11 +824,11 @@
             },
             "colors": [
               {
-                "color": "#4ade80",
+                "color": "#22c55e",
                 "position": 0
               },
               {
-                "color": "#22c55e",
+                "color": "#16a34a",
                 "position": 1
               }
             ]
@@ -814,13 +839,17 @@
             {
               "type": "shadow",
               "shadowType": "outer",
-              "color": "#4ade8050",
+              "color": "#22c55e30",
+              "offset": {
+                "x": 0,
+                "y": 2
+              },
               "blur": 10
             },
             {
               "type": "shadow",
               "shadowType": "outer",
-              "color": "#00000030",
+              "color": "#00000015",
               "offset": {
                 "x": 0,
                 "y": 2
@@ -846,11 +875,11 @@
             },
             "colors": [
               {
-                "color": "#4ade80",
+                "color": "#22c55e",
                 "position": 0
               },
               {
-                "color": "#22c55e",
+                "color": "#16a34a",
                 "position": 1
               }
             ]
@@ -861,13 +890,17 @@
             {
               "type": "shadow",
               "shadowType": "outer",
-              "color": "#4ade8050",
+              "color": "#22c55e30",
+              "offset": {
+                "x": 0,
+                "y": 2
+              },
               "blur": 10
             },
             {
               "type": "shadow",
               "shadowType": "outer",
-              "color": "#00000030",
+              "color": "#00000015",
               "offset": {
                 "x": 0,
                 "y": 2
@@ -893,11 +926,11 @@
             },
             "colors": [
               {
-                "color": "#4ade80",
+                "color": "#22c55e",
                 "position": 0
               },
               {
-                "color": "#22c55e",
+                "color": "#16a34a",
                 "position": 1
               }
             ]
@@ -908,13 +941,17 @@
             {
               "type": "shadow",
               "shadowType": "outer",
-              "color": "#4ade8050",
+              "color": "#22c55e30",
+              "offset": {
+                "x": 0,
+                "y": 2
+              },
               "blur": 10
             },
             {
               "type": "shadow",
               "shadowType": "outer",
-              "color": "#00000030",
+              "color": "#00000015",
               "offset": {
                 "x": 0,
                 "y": 2
@@ -922,6 +959,18 @@
               "blur": 4
             }
           ]
+        },
+        {
+          "type": "text",
+          "id": "dSLF1",
+          "x": 1100,
+          "y": 700,
+          "name": "t2",
+          "fill": "$foreground-muted",
+          "content": "powered by pencil",
+          "fontFamily": "$--fps-font-captions",
+          "fontSize": 12,
+          "fontWeight": "normal"
         }
       ]
     },
@@ -1006,7 +1055,7 @@
               "effect": {
                 "type": "shadow",
                 "shadowType": "outer",
-                "color": "#4ade8040",
+                "color": "#22c55e30",
                 "blur": 10
               },
               "content": "训练完成",
@@ -1048,7 +1097,7 @@
                       "id": "e88Ke",
                       "name": "Card Total Score",
                       "width": "fill_container",
-                      "fill": "#1a1a2e80",
+                      "fill": "#ffffff",
                       "cornerRadius": "$--fps-rounded-md",
                       "stroke": {
                         "align": "inside",
@@ -1114,7 +1163,7 @@
                       "id": "Q1vxlB",
                       "name": "Card Hits",
                       "width": "fill_container",
-                      "fill": "#1a1a2e80",
+                      "fill": "#ffffff",
                       "cornerRadius": "$--fps-rounded-md",
                       "stroke": {
                         "align": "inside",
@@ -1180,7 +1229,7 @@
                       "id": "hAEHS",
                       "name": "Card Misses",
                       "width": "fill_container",
-                      "fill": "#1a1a2e80",
+                      "fill": "#ffffff",
                       "cornerRadius": "$--fps-rounded-md",
                       "stroke": {
                         "align": "inside",
@@ -1256,7 +1305,7 @@
                       "id": "qXezw",
                       "name": "Card Hit Rate",
                       "width": "fill_container",
-                      "fill": "#1a1a2e80",
+                      "fill": "#ffffff",
                       "cornerRadius": "$--fps-rounded-md",
                       "stroke": {
                         "align": "inside",
@@ -1322,7 +1371,7 @@
                       "id": "b5TZcl",
                       "name": "Card Avg Reaction",
                       "width": "fill_container",
-                      "fill": "#1a1a2e80",
+                      "fill": "#ffffff",
                       "cornerRadius": "$--fps-rounded-md",
                       "stroke": {
                         "align": "inside",
@@ -1388,7 +1437,7 @@
                       "id": "utBac",
                       "name": "Card Hits Per Sec",
                       "width": "fill_container",
-                      "fill": "#1a1a2e80",
+                      "fill": "#ffffff",
                       "cornerRadius": "$--fps-rounded-md",
                       "stroke": {
                         "align": "inside",
@@ -1553,6 +1602,18 @@
               ]
             }
           ]
+        },
+        {
+          "type": "text",
+          "id": "adnLu",
+          "x": 1100,
+          "y": 700,
+          "name": "t3",
+          "fill": "$foreground-muted",
+          "content": "powered by pencil",
+          "fontFamily": "$--fps-font-captions",
+          "fontSize": 12,
+          "fontWeight": "normal"
         }
       ]
     }
@@ -1560,59 +1621,59 @@
   "variables": {
     "accent-primary": {
       "type": "color",
-      "value": "#4ade80"
+      "value": "#22c55e"
     },
     "foreground-inverse": {
       "type": "color",
-      "value": "#FFFFFF"
+      "value": "#1a1a1a"
     },
     "foreground-muted": {
       "type": "color",
-      "value": "#666666"
+      "value": "#aaaaaa"
     },
     "foreground-primary": {
       "type": "color",
-      "value": "#E5E5E5"
+      "value": "#1a1a1a"
     },
     "foreground-secondary": {
       "type": "color",
-      "value": "#9ca3af"
+      "value": "#666666"
     },
     "surface-inverse": {
       "type": "color",
-      "value": "#1a1a2e"
+      "value": "#ffffff"
     },
     "surface-primary": {
       "type": "color",
-      "value": "#16213e"
+      "value": "#fafafa"
     },
     "surface-secondary": {
       "type": "color",
-      "value": "#1a1a2e"
+      "value": "#f0f0f0"
     },
     "--fps-accent": {
       "type": "color",
-      "value": "#4ade80"
+      "value": "#22c55e"
     },
     "--fps-accent-glow": {
       "type": "color",
-      "value": "#4ade8060"
+      "value": "#22c55e40"
     },
     "--fps-bg-card": {
       "type": "color",
-      "value": "#1a1a2e"
+      "value": "#ffffff"
     },
     "--fps-bg-dark": {
       "type": "color",
-      "value": "#1a1a2e"
+      "value": "#fafafa"
     },
     "--fps-bg-main": {
       "type": "color",
-      "value": "#16213e"
+      "value": "#f5f5f5"
     },
     "--fps-border": {
       "type": "color",
-      "value": "#2a2a4a"
+      "value": "#e5e5e5"
     },
     "--fps-font": {
       "type": "string",
@@ -1620,19 +1681,19 @@
     },
     "--fps-green-dark": {
       "type": "color",
-      "value": "#22c55e"
+      "value": "#16a34a"
     },
     "--fps-text-dim": {
       "type": "color",
-      "value": "#666666"
+      "value": "#aaaaaa"
     },
     "--fps-text-light": {
       "type": "color",
-      "value": "#9ca3af"
+      "value": "#888888"
     },
     "--fps-text-muted": {
       "type": "color",
-      "value": "#999999"
+      "value": "#888888"
     },
     "--fps-font-body": {
       "type": "string",
@@ -1668,7 +1729,10 @@
     },
     "--fps-text-primary": {
       "type": "color",
-      "value": "#E5E5E5"
+      "value": "#1a1a1a"
     }
+  },
+  "imports": {
+    "i": "pencil:shadcn.lib.pen"
   }
 }
