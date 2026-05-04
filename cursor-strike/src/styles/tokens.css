@@ -1,0 +1,21 @@
+:root {
+  --fps-accent: #4ade80;
+  --fps-green-dark: #22c55e;
+  --fps-bg-dark: #1a1a2e;
+  --fps-bg-card: #1a1a2e;
+  --fps-border: #2a2a4a;
+  --fps-text-muted: #999999;
+  --fps-text-light: #9ca3af;
+  --fps-text-dim: #666666;
+  --fps-text-primary: #E5E5E5;
+  --fps-error: #ef4444;
+
+  --fps-font-heading: 'Anton', sans-serif;
+  --fps-font-body: 'Inter', sans-serif;
+  --fps-font-captions: 'Inter', sans-serif;
+
+  --fps-rounded-sm: 4px;
+  --fps-rounded-md: 6px;
+
+  --fps-glow-accent: 0 0 8px rgba(74, 222, 128, 0.25);
+}

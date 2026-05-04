@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400&display=swap');
+@import './tokens.css';
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body, #root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--fps-bg-dark);
+  font-family: var(--fps-font-body);
+  color: var(--fps-text-primary);
+  user-select: none;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input { outline: none; }
+::-webkit-input-placeholder { color: rgba(255,255,255,0.25); }

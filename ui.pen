@@ -1,0 +1,1674 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "oRTQV",
+      "x": 0,
+      "y": 0,
+      "name": "Slide 1 - Login",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": "$--fps-bg-dark",
+      "layout": "vertical",
+      "gap": 40,
+      "padding": [
+        0,
+        80
+      ],
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "QdQ4g",
+          "name": "Grid BG",
+          "clip": true,
+          "width": "fill_container",
+          "height": "fill_container",
+          "fill": "$--fps-bg-dark",
+          "layout": "none",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "Y7nW77",
+              "x": 340,
+              "y": 160,
+              "name": "gridGlow",
+              "opacity": 0.5,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "radial",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "width": 1,
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#4ade8008",
+                    "position": 0
+                  },
+                  {
+                    "color": "#1a1a2e00",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 600,
+              "height": 400
+            },
+            {
+              "type": "rectangle",
+              "id": "A0b8F",
+              "x": 0,
+              "y": 180,
+              "name": "gh1",
+              "opacity": 0.15,
+              "fill": "#1a1a1a",
+              "width": 1280,
+              "height": 1
+            },
+            {
+              "type": "rectangle",
+              "id": "dIs1i",
+              "x": 0,
+              "y": 360,
+              "name": "gh2",
+              "opacity": 0.15,
+              "fill": "#1a1a1a",
+              "width": 1280,
+              "height": 1
+            },
+            {
+              "type": "rectangle",
+              "id": "T1IfaY",
+              "x": 0,
+              "y": 540,
+              "name": "gh3",
+              "opacity": 0.15,
+              "fill": "#1a1a1a",
+              "width": 1280,
+              "height": 1
+            },
+            {
+              "type": "rectangle",
+              "id": "fEfip",
+              "x": 320,
+              "y": 0,
+              "name": "gv1",
+              "opacity": 0.15,
+              "fill": "#1a1a1a",
+              "width": 1,
+              "height": 720
+            },
+            {
+              "type": "rectangle",
+              "id": "WoIfp",
+              "x": 640,
+              "y": 0,
+              "name": "gv2",
+              "opacity": 0.15,
+              "fill": "#1a1a1a",
+              "width": 1,
+              "height": 720
+            },
+            {
+              "type": "rectangle",
+              "id": "HWwwf",
+              "x": 960,
+              "y": 0,
+              "name": "gv3",
+              "opacity": 0.15,
+              "fill": "#1a1a1a",
+              "width": 1,
+              "height": 720
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "qabHX",
+          "name": "Login Content",
+          "width": 1280,
+          "height": 720,
+          "layout": "vertical",
+          "gap": 32,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "lgtCp",
+              "name": "Login Inner",
+              "width": 480,
+              "layout": "vertical",
+              "gap": 32,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ff1sd",
+                  "name": "title",
+                  "fill": "$accent-primary",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#4ade8040",
+                    "blur": 12
+                  },
+                  "content": "CURSOR STRIKE",
+                  "textAlign": "center",
+                  "fontFamily": "$--fps-font-heading",
+                  "fontSize": 72,
+                  "fontWeight": "bold",
+                  "letterSpacing": -2
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 1,
+                  "id": "DZdpv",
+                  "name": "Accent Line",
+                  "opacity": 0.6,
+                  "fill": "$accent-primary",
+                  "width": 200,
+                  "height": 2
+                },
+                {
+                  "type": "text",
+                  "id": "C3tOP",
+                  "name": "subtitle",
+                  "fill": "$foreground-secondary",
+                  "content": "FPS 鼠标手速训练",
+                  "textAlign": "center",
+                  "fontFamily": "$--fps-font-captions",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "letterSpacing": 4
+                },
+                {
+                  "type": "frame",
+                  "id": "A7I3GN",
+                  "name": "Input Field",
+                  "width": "fill_container",
+                  "fill": "$surface-secondary",
+                  "cornerRadius": "$--fps-rounded-md",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$--fps-border"
+                  },
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "gPYA1",
+                      "name": "inputIcon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "user",
+                      "iconFontFamily": "lucide",
+                      "fill": "$--fps-text-muted"
+                    },
+                    {
+                      "type": "text",
+                      "id": "rXdux",
+                      "name": "inputText",
+                      "fill": "#ffffff40",
+                      "content": "请输入游戏昵称...",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "FmIVy",
+                  "name": "Start Button",
+                  "width": "fill_container",
+                  "fill": "$accent-primary",
+                  "cornerRadius": "$--fps-rounded-md",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#4ade8060",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 8
+                  },
+                  "gap": 10,
+                  "padding": [
+                    16,
+                    32
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "e4eGu",
+                      "name": "btnIcon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "crosshair",
+                      "iconFontFamily": "lucide",
+                      "fill": "$surface-inverse"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dX9cL",
+                      "name": "btnText",
+                      "fill": "$surface-inverse",
+                      "content": "开始游戏",
+                      "fontFamily": "$--fps-font-heading",
+                      "fontSize": 22,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "qDxPE",
+                  "name": "bottomTag",
+                  "opacity": 0.5,
+                  "fill": "$--fps-text-dim",
+                  "content": "v1.0 // 精准训练系统",
+                  "textAlign": "center",
+                  "fontFamily": "$--fps-font-captions",
+                  "fontSize": 11,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "K2XQi",
+      "x": 0,
+      "y": 800,
+      "name": "Slide 2 - Game",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": "$--fps-bg-dark",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "P7cq1",
+          "x": 20,
+          "y": 16,
+          "name": "HUD Left",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "N4ukP",
+              "name": "Pause Btn",
+              "fill": "#1a1a2e80",
+              "cornerRadius": "$--fps-rounded-sm",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "$--fps-border"
+              },
+              "gap": 8,
+              "padding": [
+                10,
+                14
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "Lnw92",
+                  "name": "pauseIcon",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "pause",
+                  "iconFontFamily": "lucide",
+                  "fill": "$foreground-secondary"
+                },
+                {
+                  "type": "text",
+                  "id": "NkGrZ",
+                  "name": "pauseText",
+                  "fill": "$foreground-secondary",
+                  "content": "暂停",
+                  "fontFamily": "$--fps-font-captions",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "I1A6jk",
+              "name": "Exit Btn",
+              "fill": "#1a1a2e80",
+              "cornerRadius": "$--fps-rounded-sm",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "$--fps-border"
+              },
+              "gap": 8,
+              "padding": [
+                10,
+                14
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "OyvjW",
+                  "name": "exitIcon",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "x",
+                  "iconFontFamily": "lucide",
+                  "fill": "$foreground-secondary"
+                },
+                {
+                  "type": "text",
+                  "id": "h5xPo",
+                  "name": "exitText",
+                  "fill": "$foreground-secondary",
+                  "content": "退出",
+                  "fontFamily": "$--fps-font-captions",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "nfxgM",
+          "x": 1080,
+          "y": 16,
+          "name": "HUD Right",
+          "width": 180,
+          "fill": "#1a1a2e90",
+          "cornerRadius": "$--fps-rounded-md",
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "$--fps-border"
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            16,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "a5C6k1",
+              "name": "scoreRow",
+              "width": "fill_container",
+              "gap": 8,
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "TAzCR",
+                  "name": "hitLabelRow",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "GzOgE",
+                      "name": "hitTxt1",
+                      "fill": "$--fps-text-muted",
+                      "content": "命中",
+                      "fontFamily": "$--fps-font-captions",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "FfBrj",
+                      "name": "hitIcon1",
+                      "width": 12,
+                      "height": 12,
+                      "iconFontName": "info",
+                      "iconFontFamily": "lucide",
+                      "fill": "$--fps-text-muted"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "vLazL",
+                  "name": "scoreVal",
+                  "fill": "$accent-primary",
+                  "content": "8/15",
+                  "fontFamily": "$--fps-font-heading",
+                  "fontSize": 24,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dHLyW",
+              "name": "timeRow",
+              "width": "fill_container",
+              "gap": 8,
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Unsdg",
+                  "name": "missLabelRow",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "SnO27",
+                      "name": "missTxt2",
+                      "fill": "$--fps-text-muted",
+                      "content": "失误",
+                      "fontFamily": "$--fps-font-captions",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "Hclhr",
+                      "name": "missIcon2",
+                      "width": 12,
+                      "height": 12,
+                      "iconFontName": "info",
+                      "iconFontFamily": "lucide",
+                      "fill": "$--fps-text-muted"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "hPxma",
+                  "name": "timeVal",
+                  "fill": "#ef4444",
+                  "content": "3",
+                  "fontFamily": "$--fps-font-heading",
+                  "fontSize": 24,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "aSTPd",
+              "name": "hitRow",
+              "width": "fill_container",
+              "gap": 8,
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ue89B",
+                  "name": "timeLabelRow",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mYyqL",
+                      "name": "timeTxt3",
+                      "fill": "$--fps-text-muted",
+                      "content": "剩余时间",
+                      "fontFamily": "$--fps-font-captions",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "DLR9J",
+                      "name": "timeIcon3",
+                      "width": 12,
+                      "height": 12,
+                      "iconFontName": "info",
+                      "iconFontFamily": "lucide",
+                      "fill": "$--fps-text-muted"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "C2UrN",
+                  "name": "hitVal",
+                  "fill": "$foreground-primary",
+                  "content": "27s",
+                  "fontFamily": "$--fps-font-heading",
+                  "fontSize": 24,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ATOl6",
+          "x": 628,
+          "y": 348,
+          "name": "Crosshair",
+          "width": 24,
+          "height": 24,
+          "layout": "none",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "bKIae",
+              "x": 10,
+              "y": 10,
+              "name": "chDot",
+              "fill": "$accent-primary",
+              "width": 4,
+              "height": 4
+            },
+            {
+              "type": "rectangle",
+              "id": "bed9R",
+              "x": 11,
+              "y": 0,
+              "name": "topArm",
+              "opacity": 0.8,
+              "fill": "$accent-primary",
+              "width": 2,
+              "height": 8
+            },
+            {
+              "type": "rectangle",
+              "id": "SDxqe",
+              "x": 11,
+              "y": 16,
+              "name": "bottomArm",
+              "opacity": 0.8,
+              "fill": "$accent-primary",
+              "width": 2,
+              "height": 8
+            },
+            {
+              "type": "rectangle",
+              "id": "zFImp",
+              "x": 0,
+              "y": 11,
+              "name": "leftArm",
+              "opacity": 0.8,
+              "fill": "$accent-primary",
+              "width": 8,
+              "height": 2
+            },
+            {
+              "type": "rectangle",
+              "id": "vR2Pa",
+              "x": 16,
+              "y": 11,
+              "name": "rightArm",
+              "opacity": 0.8,
+              "fill": "$accent-primary",
+              "width": 8,
+              "height": 2
+            }
+          ]
+        },
+        {
+          "type": "ellipse",
+          "id": "YuFg5",
+          "x": 640,
+          "y": 310,
+          "name": "Ball 1",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#4ade80",
+                "position": 0
+              },
+              {
+                "color": "#22c55e",
+                "position": 1
+              }
+            ]
+          },
+          "width": 36,
+          "height": 36,
+          "effect": [
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#4ade8050",
+              "blur": 10
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#00000030",
+              "offset": {
+                "x": 0,
+                "y": 2
+              },
+              "blur": 4
+            }
+          ]
+        },
+        {
+          "type": "ellipse",
+          "id": "iVuQe",
+          "x": 670,
+          "y": 340,
+          "name": "Ball 2",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#4ade80",
+                "position": 0
+              },
+              {
+                "color": "#22c55e",
+                "position": 1
+              }
+            ]
+          },
+          "width": 36,
+          "height": 36,
+          "effect": [
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#4ade8050",
+              "blur": 10
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#00000030",
+              "offset": {
+                "x": 0,
+                "y": 2
+              },
+              "blur": 4
+            }
+          ]
+        },
+        {
+          "type": "ellipse",
+          "id": "kEW6U",
+          "x": 610,
+          "y": 350,
+          "name": "Ball 3",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#4ade80",
+                "position": 0
+              },
+              {
+                "color": "#22c55e",
+                "position": 1
+              }
+            ]
+          },
+          "width": 36,
+          "height": 36,
+          "effect": [
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#4ade8050",
+              "blur": 10
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#00000030",
+              "offset": {
+                "x": 0,
+                "y": 2
+              },
+              "blur": 4
+            }
+          ]
+        },
+        {
+          "type": "ellipse",
+          "id": "t4OdO",
+          "x": 660,
+          "y": 310,
+          "name": "Ball 4",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#4ade80",
+                "position": 0
+              },
+              {
+                "color": "#22c55e",
+                "position": 1
+              }
+            ]
+          },
+          "width": 36,
+          "height": 36,
+          "effect": [
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#4ade8050",
+              "blur": 10
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#00000030",
+              "offset": {
+                "x": 0,
+                "y": 2
+              },
+              "blur": 4
+            }
+          ]
+        },
+        {
+          "type": "ellipse",
+          "id": "J0uEnE",
+          "x": 625,
+          "y": 330,
+          "name": "Ball 5",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#4ade80",
+                "position": 0
+              },
+              {
+                "color": "#22c55e",
+                "position": 1
+              }
+            ]
+          },
+          "width": 36,
+          "height": 36,
+          "effect": [
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#4ade8050",
+              "blur": 10
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#00000030",
+              "offset": {
+                "x": 0,
+                "y": 2
+              },
+              "blur": 4
+            }
+          ]
+        },
+        {
+          "type": "ellipse",
+          "id": "E9yOL",
+          "x": 685,
+          "y": 320,
+          "name": "Ball 6",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#4ade80",
+                "position": 0
+              },
+              {
+                "color": "#22c55e",
+                "position": 1
+              }
+            ]
+          },
+          "width": 36,
+          "height": 36,
+          "effect": [
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#4ade8050",
+              "blur": 10
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#00000030",
+              "offset": {
+                "x": 0,
+                "y": 2
+              },
+              "blur": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "a9lFed",
+      "x": 0,
+      "y": 1600,
+      "name": "Slide 3 - Results",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": "$--fps-bg-dark",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "j5kMp",
+          "x": 0,
+          "y": 0,
+          "name": "BG Glow",
+          "clip": true,
+          "width": 1280,
+          "height": 720,
+          "fill": "$--fps-bg-dark",
+          "layout": "none",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "xix4m",
+              "x": 390,
+              "y": 220,
+              "name": "bgGlow",
+              "opacity": 0.4,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "radial",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "width": 1,
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#4ade8008",
+                    "position": 0
+                  },
+                  {
+                    "color": "#1a1a2e00",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 500,
+              "height": 300
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NNdOA",
+          "x": 0,
+          "y": 0,
+          "name": "Results Main",
+          "width": 1280,
+          "height": 720,
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            60,
+            80
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "adwZm",
+              "name": "title",
+              "fill": "$accent-primary",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#4ade8040",
+                "blur": 10
+              },
+              "content": "训练完成",
+              "textAlign": "center",
+              "fontFamily": "$--fps-font-heading",
+              "fontSize": 48,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "pfMjR",
+              "name": "subtitle",
+              "fill": "$foreground-secondary",
+              "content": "表现评估报告",
+              "textAlign": "center",
+              "fontFamily": "$--fps-font-captions",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "letterSpacing": 2
+            },
+            {
+              "type": "frame",
+              "id": "R4tyq",
+              "name": "Card Grid",
+              "width": 840,
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "mD4Hw",
+                  "name": "row1",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "e88Ke",
+                      "name": "Card Total Score",
+                      "width": "fill_container",
+                      "fill": "#1a1a2e80",
+                      "cornerRadius": "$--fps-rounded-md",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$--fps-border"
+                      },
+                      "effect": {
+                        "type": "background_blur",
+                        "radius": 8
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        20,
+                        24
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "K13rhy",
+                          "name": "totalLabelRow",
+                          "gap": 4,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "a8lZl",
+                              "name": "cl1Txt",
+                              "fill": "$--fps-text-muted",
+                              "content": "总得分",
+                              "fontFamily": "$--fps-font-captions",
+                              "fontSize": 11,
+                              "fontWeight": "normal",
+                              "letterSpacing": 2
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "c1EAJ",
+                              "name": "cl1Icon",
+                              "width": 12,
+                              "height": 12,
+                              "iconFontName": "info",
+                              "iconFontFamily": "lucide",
+                              "fill": "$--fps-text-muted"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "YMPVQ",
+                          "name": "c1Val",
+                          "fill": "$accent-primary",
+                          "content": "2,450",
+                          "fontFamily": "$--fps-font-heading",
+                          "fontSize": 32,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Q1vxlB",
+                      "name": "Card Hits",
+                      "width": "fill_container",
+                      "fill": "#1a1a2e80",
+                      "cornerRadius": "$--fps-rounded-md",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$--fps-border"
+                      },
+                      "effect": {
+                        "type": "background_blur",
+                        "radius": 8
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        20,
+                        24
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "lpHAu",
+                          "name": "hitsLabelRow",
+                          "gap": 4,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "jmCuZ",
+                              "name": "cl2Txt",
+                              "fill": "$--fps-text-muted",
+                              "content": "命中",
+                              "fontFamily": "$--fps-font-captions",
+                              "fontSize": 11,
+                              "fontWeight": "normal",
+                              "letterSpacing": 2
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "QLZmJ",
+                              "name": "cl2Icon",
+                              "width": 12,
+                              "height": 12,
+                              "iconFontName": "info",
+                              "iconFontFamily": "lucide",
+                              "fill": "$--fps-text-muted"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "BAnFF",
+                          "name": "c2Val",
+                          "fill": "$accent-primary",
+                          "content": "24/45",
+                          "fontFamily": "$--fps-font-heading",
+                          "fontSize": 32,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hAEHS",
+                      "name": "Card Misses",
+                      "width": "fill_container",
+                      "fill": "#1a1a2e80",
+                      "cornerRadius": "$--fps-rounded-md",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$--fps-border"
+                      },
+                      "effect": {
+                        "type": "background_blur",
+                        "radius": 8
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        20,
+                        24
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "UAPv7",
+                          "name": "missLabelRow",
+                          "gap": 4,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "K3yejF",
+                              "name": "cl3Txt",
+                              "fill": "$--fps-text-muted",
+                              "content": "失误",
+                              "fontFamily": "$--fps-font-captions",
+                              "fontSize": 11,
+                              "fontWeight": "normal",
+                              "letterSpacing": 2
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "MqrZX",
+                              "name": "cl3Icon",
+                              "width": 12,
+                              "height": 12,
+                              "iconFontName": "info",
+                              "iconFontFamily": "lucide",
+                              "fill": "$--fps-text-muted"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "McZ76",
+                          "name": "c3Val",
+                          "fill": "#ef4444",
+                          "content": "3",
+                          "fontFamily": "$--fps-font-heading",
+                          "fontSize": 32,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nUhhO",
+                  "name": "row2",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "qXezw",
+                      "name": "Card Hit Rate",
+                      "width": "fill_container",
+                      "fill": "#1a1a2e80",
+                      "cornerRadius": "$--fps-rounded-md",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$--fps-border"
+                      },
+                      "effect": {
+                        "type": "background_blur",
+                        "radius": 8
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        20,
+                        24
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "SYqpN",
+                          "name": "rateLabelRow",
+                          "gap": 4,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "tfnZU",
+                              "name": "cl4Txt",
+                              "fill": "$--fps-text-muted",
+                              "content": "命中率",
+                              "fontFamily": "$--fps-font-captions",
+                              "fontSize": 11,
+                              "fontWeight": "normal",
+                              "letterSpacing": 2
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "cmmth",
+                              "name": "cl4Icon",
+                              "width": 12,
+                              "height": 12,
+                              "iconFontName": "info",
+                              "iconFontFamily": "lucide",
+                              "fill": "$--fps-text-muted"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "B0RZX7",
+                          "name": "c4Val",
+                          "fill": "$accent-primary",
+                          "content": "87%",
+                          "fontFamily": "$--fps-font-heading",
+                          "fontSize": 32,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "b5TZcl",
+                      "name": "Card Avg Reaction",
+                      "width": "fill_container",
+                      "fill": "#1a1a2e80",
+                      "cornerRadius": "$--fps-rounded-md",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$--fps-border"
+                      },
+                      "effect": {
+                        "type": "background_blur",
+                        "radius": 8
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        20,
+                        24
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "UuCWM",
+                          "name": "reactLabelRow",
+                          "gap": 4,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Sx99j",
+                              "name": "cl5Txt",
+                              "fill": "$--fps-text-muted",
+                              "content": "平均反应用时",
+                              "fontFamily": "$--fps-font-captions",
+                              "fontSize": 11,
+                              "fontWeight": "normal",
+                              "letterSpacing": 2
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "K9QEf",
+                              "name": "cl5Icon",
+                              "width": 12,
+                              "height": 12,
+                              "iconFontName": "info",
+                              "iconFontFamily": "lucide",
+                              "fill": "$--fps-text-muted"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "XIff0",
+                          "name": "c5Val",
+                          "fill": "$accent-primary",
+                          "content": "0.32s",
+                          "fontFamily": "$--fps-font-heading",
+                          "fontSize": 32,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "utBac",
+                      "name": "Card Hits Per Sec",
+                      "width": "fill_container",
+                      "fill": "#1a1a2e80",
+                      "cornerRadius": "$--fps-rounded-md",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$--fps-border"
+                      },
+                      "effect": {
+                        "type": "background_blur",
+                        "radius": 8
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        20,
+                        24
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "v9ieIb",
+                          "name": "hpsLabelRow",
+                          "gap": 4,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "YQpTJ",
+                              "name": "cl6Txt",
+                              "fill": "$--fps-text-muted",
+                              "content": "每秒命中",
+                              "fontFamily": "$--fps-font-captions",
+                              "fontSize": 11,
+                              "fontWeight": "normal",
+                              "letterSpacing": 2
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "WBoUA",
+                              "name": "cl6Icon",
+                              "width": 12,
+                              "height": 12,
+                              "iconFontName": "info",
+                              "iconFontFamily": "lucide",
+                              "fill": "$--fps-text-muted"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "tXgYx",
+                          "name": "c6Val",
+                          "fill": "$accent-primary",
+                          "content": "0.8",
+                          "fontFamily": "$--fps-font-heading",
+                          "fontSize": 32,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xp664",
+              "name": "Action Buttons",
+              "width": 480,
+              "gap": 16,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "KKHvy",
+                  "name": "Play Again Btn",
+                  "width": "fill_container",
+                  "fill": "$accent-primary",
+                  "cornerRadius": "$--fps-rounded-md",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "$--fps-accent-glow",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 8
+                  },
+                  "gap": 10,
+                  "padding": [
+                    14,
+                    28
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "SJNvI",
+                      "name": "playIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "rotate-ccw",
+                      "iconFontFamily": "lucide",
+                      "fill": "$surface-inverse"
+                    },
+                    {
+                      "type": "text",
+                      "id": "oj0lK",
+                      "name": "playText",
+                      "fill": "$surface-inverse",
+                      "content": "再来一局",
+                      "fontFamily": "$--fps-font-heading",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "BVhMf",
+                  "name": "Home Btn",
+                  "width": "fill_container",
+                  "fill": "$surface-secondary",
+                  "cornerRadius": "$--fps-rounded-md",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$--fps-border"
+                  },
+                  "gap": 10,
+                  "padding": [
+                    14,
+                    28
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "O10O1d",
+                      "name": "homeIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "house",
+                      "iconFontFamily": "lucide",
+                      "fill": "$foreground-secondary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "t6x4r",
+                      "name": "homeText",
+                      "fill": "$foreground-secondary",
+                      "content": "返回主页",
+                      "fontFamily": "$--fps-font-heading",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "accent-primary": {
+      "type": "color",
+      "value": "#4ade80"
+    },
+    "foreground-inverse": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "foreground-muted": {
+      "type": "color",
+      "value": "#666666"
+    },
+    "foreground-primary": {
+      "type": "color",
+      "value": "#E5E5E5"
+    },
+    "foreground-secondary": {
+      "type": "color",
+      "value": "#9ca3af"
+    },
+    "surface-inverse": {
+      "type": "color",
+      "value": "#1a1a2e"
+    },
+    "surface-primary": {
+      "type": "color",
+      "value": "#16213e"
+    },
+    "surface-secondary": {
+      "type": "color",
+      "value": "#1a1a2e"
+    },
+    "--fps-accent": {
+      "type": "color",
+      "value": "#4ade80"
+    },
+    "--fps-accent-glow": {
+      "type": "color",
+      "value": "#4ade8060"
+    },
+    "--fps-bg-card": {
+      "type": "color",
+      "value": "#1a1a2e"
+    },
+    "--fps-bg-dark": {
+      "type": "color",
+      "value": "#1a1a2e"
+    },
+    "--fps-bg-main": {
+      "type": "color",
+      "value": "#16213e"
+    },
+    "--fps-border": {
+      "type": "color",
+      "value": "#2a2a4a"
+    },
+    "--fps-font": {
+      "type": "string",
+      "value": "Geist"
+    },
+    "--fps-green-dark": {
+      "type": "color",
+      "value": "#22c55e"
+    },
+    "--fps-text-dim": {
+      "type": "color",
+      "value": "#666666"
+    },
+    "--fps-text-light": {
+      "type": "color",
+      "value": "#9ca3af"
+    },
+    "--fps-text-muted": {
+      "type": "color",
+      "value": "#999999"
+    },
+    "--fps-font-body": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "--fps-font-captions": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "--fps-font-heading": {
+      "type": "string",
+      "value": "Anton"
+    },
+    "--fps-font-mono": {
+      "type": "string",
+      "value": "Geist Mono"
+    },
+    "--fps-rounded-md": {
+      "type": "number",
+      "value": 6
+    },
+    "--fps-rounded-sm": {
+      "type": "number",
+      "value": 4
+    },
+    "--fps-shadow-sm": {
+      "type": "color",
+      "value": "#0000000a"
+    },
+    "--fps-error": {
+      "type": "color",
+      "value": "#ef4444"
+    },
+    "--fps-text-primary": {
+      "type": "color",
+      "value": "#E5E5E5"
+    }
+  }
+}
